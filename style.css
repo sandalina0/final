@@ -1,0 +1,99 @@
+.lora-uniquifier {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main{
+  background-color: #1b1c1f;
+}
+
+
+
+.navbar{
+  width: auto;
+  border-radius:80px;
+  display: flex;
+  background-color: #323335;
+  justify-content: space-around;
+}
+
+.nav-link{
+  color: white !important;
+}
+
+.nav-link:hover{
+  color: #323335;
+}
+
+#right-item-1{
+  position: absolute;
+  right: 5%;
+}
+
+#right-item-2{
+  position: absolute;
+  right: 20%;
+}
+
+#left-item-1{
+  position: absolute;
+  left: 5%;
+}
+
+#left-item-2{
+  position: absolute;
+  left: 20%;
+}
+
+.text-about-site{
+  margin-right: 10px;
+  border-right-style: solid;
+  margin-left: 25px;
+  color: #fdf4e3;
+}
+
+.img-main-block{
+  border-radius: 30px;
+  margin: 0;
+  width: 300px;
+  height: 200px;
+}
+
+.bigimg-main-block{
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  width: 990px;  
+  height: 400px;
+}
+
+.pre-footer{
+  background-color: #EAE6CA !important;
+}
+
+.name{
+  margin-left: 10px;
+}
+
+.text1{
+  border-left: solid;
+}
+
+.text{
+  border-right: solid;
+}
+
+.learn-button{
+  margin-top: 10px;
+  background-color: purple;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+.learn-link{
+  text-decoration: none;
+  color: white !important;
+}
