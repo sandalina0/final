@@ -1,3 +1,10 @@
+.active{
+  color: black !important;
+  text-decoration:underline !important;
+  overflow: hidden !important;
+  text-transform: uppercase !important;
+}
+
 .lora-uniquifier {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
@@ -5,14 +12,11 @@
   font-style: normal;
 }
 
-.main{
+.main {
   background-color: #1b1c1f;
 }
 
-
-
-.navbar{
-  width: auto;
+.nav{
   border-radius:80px;
   display: flex;
   background-color: #323335;
@@ -23,35 +27,25 @@
   color: white !important;
 }
 
-.nav-link:hover{
-  color: #323335;
-}
-
-#right-item-1{
-  position: absolute;
-  right: 5%;
-}
-
-#right-item-2{
-  position: absolute;
-  right: 20%;
-}
-
-#left-item-1{
-  position: absolute;
-  left: 5%;
-}
-
-#left-item-2{
-  position: absolute;
-  left: 20%;
+#center-link{
+  display: flex;
+  justify-content: center;
 }
 
 .text-about-site{
-  margin-right: 10px;
+  padding-right: 8px;
+  margin-right: 20px;
   border-right-style: solid;
   margin-left: 25px;
   color: #fdf4e3;
+}
+
+.main-block{
+  width: 1500px;
+}
+
+.img-row{
+  width: 1000px;
 }
 
 .img-main-block{
@@ -70,10 +64,27 @@
 }
 
 .pre-footer{
+  height: 1090px;
   background-color: #EAE6CA !important;
 }
 
+.rockstar-pres{
+  margin-bottom: 30px;
+  width: 1500px;
+}
+
+.cd-pres{
+  margin-bottom: 30px;
+  width: 1510px;
+}
+
+.ubisoft-pres{
+  margin-bottom: 10px;
+  width: 1500px;
+}
+
 .name{
+  width: auto;
   margin-left: 10px;
 }
 
@@ -86,6 +97,7 @@
 }
 
 .learn-button{
+  border: none;
   margin-top: 10px;
   background-color: purple;
   width: 200px;
@@ -96,4 +108,54 @@
 .learn-link{
   text-decoration: none;
   color: white !important;
+}
+
+.swiper {
+  margin-left: 30px;
+  width: 500px;
+  height: 300px;
+}
+
+.pres-cd{
+  margin-left: 50px;
+}
+
+.pres-rs{
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#text{
+  margin-left: 10px;
+}
+
+footer{
+  height: 150px;
+  background-color: black;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link{
+  color: white;
+  margin-left: 20px;
 }

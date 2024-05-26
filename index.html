@@ -11,6 +11,7 @@
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="main">
@@ -18,23 +19,25 @@
             <div class="container-fluid justify-content-center">
                 <ul class="nav">
                     <li id="left-item-1" class="nav-item">
-                      <a class=" nav-link" href="#">Самые сложные стратегии</a>
+                      <a class=" nav-link" href="dif-games.html">Самые сложные стратегии</a>
                     </li>
                     <li id="left-item-2" class="nav-item">
-                      <a id="" class=" nav-link" href="#">Онлайн игры</a>
+                      <a id="" class=" nav-link" href="online-games.html">Онлайн игры</a>
                     </li>
                     <li  class="nav-item">
-                      <a class="nav-link" href="#">Главная</a>
+                      <a id="center-link" class="nav-link" href="index.html">Главная</a>
+                      
                     </li>
                     <li id="right-item-2" class="nav-item">
-                        <a class=" nav-link" href="#">Открытый мир в играх</a>
+                        <a class=" nav-link" href="world-games.html">Открытый мир в играх</a>
                     </li>
                     <li id="right-item-1" class="nav-item">
-                        <a class="nav-link" href="#">Игры с лучшим сюжетом</a>
+                        <a class="nav-link" href="plot.html">Игры с лучшим сюжетом</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <audio loop="true" controls="true" autoplay="true" src="./audio/Jeremy_Soule_-_Secunda_48125927.mp3"></audio>
         <br>
         <br>
         <div class="main-block row">
@@ -68,40 +71,20 @@
             <br>
             <h2 class="title" align="center">Вашему вниманию несколько самых знаменитых студий и их проекты:</h2>
             <div class="rockstar-pres row">
-                <h3 class="name">Rockstar:</h3>
-                <div class="pres col-4">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                <div class="pres-rs col-4">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./img/homepage/Pres-photoes/Rockstar/logo.jpg"></div>
+                          <div class="swiper-slide"><img src="./img/homepage/Pres-photoes/Rockstar/Gta_V.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="./img/homepage/Pres-photoes/Rockstar/rdr.jpg" alt=""></div>
                         </div>
-                        <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./img/homepage/Pres-photoes/Rockstar/logo.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/homepage/Pres-photoes/Rockstar/gta_sa.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/homepage/Pres-photoes/Rockstar/Gta_V.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./img/homepage/Pres-photoes/Rockstar/rdr.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <div class="text1 fs-5 col-8">
+                <div class="text1 fs-5 col-7">
                     Rockstar Games – это ведущая мировая компания в индустрии видеоигр, известная своими культовыми проектами, 
                     такими как серия Grand Theft Auto, Red Dead Redemption и Max Payne. Компания была основана в 1998 году и с тех пор продолжила радовать 
                     геймеров по всему миру своими увлекательными и инновационными играми. Rockstar Games славится своим качеством и оригинальностью игровых 
@@ -113,55 +96,82 @@
                 </div>
             </div>
             <div class="cd-pres row">
-                <h3 class="name">CD-project:</h3>
-                <div class="text fs-5 col-8">
-                    Rockstar Games – это ведущая мировая компания в индустрии видеоигр, известная своими культовыми проектами, 
-                    такими как серия Grand Theft Auto, Red Dead Redemption и Max Payne. Компания была основана в 1998 году и с тех пор продолжила радовать 
-                    геймеров по всему миру своими увлекательными и инновационными играми. Rockstar Games славится своим качеством и оригинальностью игровых 
-                    проектов, а также отличается от других компаний своим уникальным стилем и подходом к созданию игр. 
-                    Создавая невероятные миры и персонажей, Rockstar Games продолжает завоевывать сердца миллионов игроков и 
-                    устанавливать новые стандарты в индустрии видеоигр.
+                <br>
+
+                <div id="text" class="text fs-5 col-7">
+                    Компания CD Projekt была основана в 1994 году и с тех пор стала одним из крупнейших игровых разработчиков и издателей в мире. 
+                    Основным фокусом компании являются ролевые игры, такие как серия "Ведьмак", которая стала культовой среди геймеров по всему миру. 
+                    CD Projekt также известен своими новаторскими подходами к разработке игр, сильным сюжетом и качественной графикой. Компания активно 
+                    продвигает концепцию "гейминга для всех" и стремится создавать игры, которые будут радовать как опытных геймеров, так и новичков. 
+                    Своими проектами CD Projekt продолжает завоевывать сердца игроков и оставаться одним из самых успешных игровых разработчиков в индустрии.
                     <br>
-                    <button class="learn-button"><a target="_blank" class="learn-link" href="https://rockstargame.su/">Узнать больше</a></button>
+                    <button class="learn-button"><a target="_blank" class="learn-link" href="https://www.cdprojektred.com/en">Узнать больше</a></button>
                 </div>
                 <div class="col-4 pres-cd">
-                    <div id="app">
-                        <!-- Shutters Slider -->
-                        <div class="swiper">
-                          <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                              <!-- shutters image must have "swiper-shutters-image" class, one image per slide -->
-                              <img class="swiper-shutters-image" src="./images/1.jpg" />
-                              <!-- demo slide title -->
-                              <div class="demo-slide-title" data-swiper-parallax="50%">Tiffany</div>
-                            </div>
-                            <div class="swiper-slide">
-                              <img class="swiper-shutters-image" src="./images/2.jpg" />
-                              <div class="demo-slide-title" data-swiper-parallax="50%">Michele</div>
-                            </div>
-                            <div class="swiper-slide">
-                              <img class="swiper-shutters-image" src="./images/3.jpg" />
-                              <div class="demo-slide-title" data-swiper-parallax="50%">Jane</div>
-                            </div>
-                          </div>
-                    
-                          <div class="swiper-button-prev"></div>
-                          <div class="swiper-button-next"></div>
-                          <div class="swiper-pagination"></div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./img/homepage/Pres-photoes/CD Project/logo.webp" alt=""></div>
+                          <div class="swiper-slide"><img src="./img/homepage/Pres-photoes/CD Project/g3pfswz2ozry.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="./img/homepage/Pres-photoes/CD Project/cyberpunk.jpeg" alt=""></div>
                         </div>
-                    
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <div class="ubisoft-pres row">
+                <div class="pres-rs col-4">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="./img/homepage/Pres-photoes/Ubisoft/logo.jpg"></div>
+                          <div class="swiper-slide"><img src="./img/homepage/Pres-photoes/Ubisoft/for_honor.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="./img/homepage/Pres-photoes/Ubisoft/p1_3105106_a9868e52.jpg" alt=""></div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                    
-            <div class="rockstar-pres row">
-                <h3 class="name">Ubisoft</h3>
+                <div class="text1 fs-5 col-7">
+                    Юбисофт - крупнейшая французская компания, занимающаяся разработкой и изданием видеоигр. 
+                    Основанная в 1986 году, она стала одним из лидеров в индустрии развлечений, выпуская такие популярные игры, как Assassin's Creed, Far Cry, 
+                    Watch Dogs и многие другие. Компания активно продвигает новые технологии и инновации, что делает ее игры востребованными 
+                    среди геймеров со всего мира. Игры от Юбисофт не только позволяют погрузиться в захватывающие приключения, но и отличаются 
+                    высоким качеством графики и игрового процесса. 
+                    Юбисофт продолжает радовать своих поклонников новыми проектами и сохраняет позицию лидера на мировом рынке видеоигр
+                    <br>
+                    <button class="learn-button"><a target="_blank" class="learn-link" href="https://www.ubisoft.com/ru-ru/.">Узнать больше</a></button>
+                </div>
             </div>
         </div>
     </div>
-    
-    </div>
+    <footer>
+        <div class="footer-container">
+            <a class="footer-link" href="#">Телеграмм</a>
+            <a class="footer-link" href="#">Вконтакте</a>
+            <a class="footer-link" href="#">Инстаграм</a>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
